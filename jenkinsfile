@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+    stages {
+
+        stage('first stage') {
+            steps {
+                sh 'echo "SCM"'
+            }
+        }
+
+        stage('second stage') {
+            steps {
+                sh 'echo "Build"'
+            }
+        }
+        stage('third stage'){
+            steps {
+                sh 'echo "test"'
+            }
+        }
+        stage('4th stage'){
+            steps {
+                sh 'echo "deliver"'
+            }
+        }
+        stage('5th stage'){
+            steps {
+                sh 'echo "deploy"'
+            }
+        }
+    }
+}
